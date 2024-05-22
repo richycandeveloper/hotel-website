@@ -1,0 +1,344 @@
+/* Reset */
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* main styling */
+html,body {
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+h1, h2, h3,{
+    padding-botten: 20px;
+}
+
+p{
+    margin:10px 0;
+}
+/* utility class*/
+.container{
+   margin: auto;
+   max-width: 1100px;
+   overflow: auto;
+   padding: 0 20px;
+}
+.text-primary{
+   color: #f7c08a;
+
+}
+.lead{
+   font-size: 20px;
+}
+.btn{
+   display: inline-block;
+   font-size: 18px;
+   color: #fff;
+   background: #333;
+   padding: 13px  20px;
+   border:none;
+   cursor: pointer;
+}
+.btn:hover{
+   background: #f7c08a;
+   color: #333;
+}
+.btn-light{
+   background: #f4f4f4;
+   color: #333;
+}
+.bg-dark{
+   background: #333;
+   color: #fff;
+}
+.bg-light{
+   background: #f4f4f4;
+   color: #333;
+}
+.bg-primary{
+   background: #333;
+   color: #f7c08a;
+}
+ /* Navbar */
+ #navbar{
+    background: #333;
+    color:#fff;
+    overflow: auto;
+ }
+ #navbar a{
+    color: #fff;
+ }
+
+
+ #navbar h1{
+    float: left;
+    padding-top:20px;
+
+ }
+ #navbar ul li {
+    float:left;
+ }
+ #navbar ul li a {
+    display:block;
+    padding: 20px;
+    text-align: center;
+ }
+ #navbar ul li a:hover,
+ #navbar ul li a.curent{
+    background-color: #444;
+    color: #f7c08a;
+ }
+
+
+ /* showcase */
+ #showcase{
+   background: url('../images/showcase\ .jpg') no-repeat center center/cover;
+   height: 600px;
+ }
+ #showcase .showcase-content {
+ color: #fff;
+ text-align: center;
+ padding-top:170px;
+ }
+ #showcase .showcase-content h1{
+   font-size: 60px;
+   line-height: 1.2em;
+ }
+ #showcase .showcase-content p{
+   padding-bottom: 20px;
+   line-height: 1.7em;
+
+ }
+ /*home info */
+ #home-info{
+   height:400px;
+ }
+
+ #home-info .info-img{
+   float:left;
+   width: 50%;
+   background: url(../images/photo-1.jpg) no-repeat;
+   min-height: 500px;
+
+ }
+ #home-info .info-content{
+   float: right;
+   width: 50%;
+   height: 100%;
+   text-align: center;
+   padding: 50px 30px;
+   overflow: hidden;
+ }
+ #home-info .info-content p {
+   padding-bottom: 30px;
+ }
+ 
+#feature {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 5px;
+   background-image: url('../images/sharp\ img.png'); /* Replace with your actual image path */
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed; /* Keeps the background fixed during scroll */
+   box-sizing: border-box;
+   min-height: 50vh; /* Ensure the section covers the full viewport height */
+}
+.feature {
+   background: linear-gradient(45deg, #ff9a9e, #fad0c4); /* Gradient background */
+   border: 3px solid #ddd;
+   border-radius: 20px;
+   padding: 20px;
+   flex: 1;
+   margin: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   text-align: center;
+   max-width: calc(33% - 20px);
+   color: #333;
+   transition: transform 0.3s;
+}
+
+.feature h2 {
+   color: #333;
+   margin-bottom: 10px;
+}
+
+.feature p {
+   color: #f4f4f4;
+}
+
+/* Adding hover effect */
+.feature:hover {
+   transform: translateY(-10px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+   #feature {
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .feature {
+       max-width: 80%;
+       margin: 10px 0;
+   }
+}
+/* General footer styling */
+footer {
+   background-color: #333;
+   color: #fff;
+   padding: 40px 0;
+   font-family: Arial, sans-serif;
+}
+
+.footer-content {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 20px;
+}
+
+.footer-section {
+   flex: 1;
+   margin: 20px;
+   min-width: 200px;
+}
+
+.footer-section h2 {
+   font-size: 18px;
+   margin-bottom: 20px;
+   color: #f4f4f4;
+}
+
+.footer-section ul {
+   list-style: none;
+   padding: 0;
+}
+
+.footer-section ul li {
+   margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+   color: #ccc;
+   text-decoration: none;
+   transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+   color: #fff;
+}
+
+.footer-section p {
+   margin: 0;
+   margin-bottom: 10px;
+   color: #ccc;
+}
+
+.footer-section a {
+   color: #ccc;
+   text-decoration: none;
+   display: inline-block;
+   margin-right: 10px;
+   transition: color 0.3s;
+}
+
+.footer-section a:hover {
+   color: #fff;
+}
+
+.newsletter form {
+   display: flex;
+}
+
+.newsletter input[type="email"] {
+   flex: 1;
+   padding: 10px;
+   border: 4px;
+   border-radius: 3px 0 0 3px;
+   outline: none;
+   background-color: red;
+}
+
+.newsletter button {
+   padding: 10px;
+   border: none;
+   background-color: green;
+   color: #333;
+   cursor: pointer;
+   border-radius: 0 3px 3px 0;
+   transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+   background-color: #ddd;
+   color: red;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+   .footer-content {
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .footer-section {
+       margin: 10px 0;
+   }
+
+   .newsletter form {
+       flex-direction: column;
+   }
+
+   .newsletter input[type="email"], .newsletter button {
+       width: 100%;
+       border-radius: 3px;
+   }
+
+   .newsletter button {
+       margin-top: 10px;
+   }
+}
+/* Styles for medium devices (tablets, 709px to 645px) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+   body {
+       background-color: lightgreen;
+   }
+
+   .container {
+       padding: 15px;
+       font-size: 16px;
+   }
+
+   .header, .content, .footer {
+       width: 100%;
+       float: none;
+   }
+}
+
+/* Styles for large devices (desktops, 768px and up) */
+@media only screen and (min-width: 768px) {
+   body {
+       background-color: lightcoral;
+   }
+
+   .container {
+       padding: 20px;
+       font-size: 18px;
+   }
+
+   .header, .content, .footer {
+       width: 33.33%;
+       float: left;
+   }
+}
